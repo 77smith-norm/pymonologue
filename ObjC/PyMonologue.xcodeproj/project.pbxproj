@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000021001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011001 /* main.m */; };
+		A00000000000000000021002 /* PMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011003 /* PMAppDelegate.m */; };
+		A00000000000000000021003 /* PMHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011005 /* PMHostViewController.m */; };
+		A00000000000000000021004 /* PMTextNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011007 /* PMTextNormalizer.m */; };
+		A00000000000000000021005 /* PMContextTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011009 /* PMContextTagParser.m */; };
+		A00000000000000000021006 /* PMSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011011 /* PMSpeechRecognizer.m */; };
+		A00000000000000000022001 /* PMKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000012002 /* PMKeyboardViewController.m */; };
+		A00000000000000000022002 /* PMTextNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011007 /* PMTextNormalizer.m */; };
+		A00000000000000000022003 /* PMContextTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011009 /* PMContextTagParser.m */; };
+		A00000000000000000022004 /* PMSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000011011 /* PMSpeechRecognizer.m */; };
+		A00000000000000000022005 /* PyMonologueKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A00000000000000000010001 /* PyMonologueKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A00000000000000000023001 /* PMTextNormalizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000013000 /* PMTextNormalizerTests.m */; };
+		A00000000000000000023002 /* PMContextTagParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000013001 /* PMContextTagParserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000002010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000002000;
+			remoteInfo = PyMonologueKeyboard;
+		};
+		A00000000000000000003010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000001000;
+			remoteInfo = PyMonologue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A00000000000000000001004 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A00000000000000000022005 /* PyMonologueKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000010000 /* PyMonologue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyMonologue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000010001 /* PyMonologueKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PyMonologueKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000010002 /* PyMonologueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyMonologueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000011000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000011001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A00000000000000000011002 /* PMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMAppDelegate.h; sourceTree = "<group>"; };
+		A00000000000000000011003 /* PMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMAppDelegate.m; sourceTree = "<group>"; };
+		A00000000000000000011004 /* PMHostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMHostViewController.h; sourceTree = "<group>"; };
+		A00000000000000000011005 /* PMHostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMHostViewController.m; sourceTree = "<group>"; };
+		A00000000000000000011006 /* PMTextNormalizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMTextNormalizer.h; sourceTree = "<group>"; };
+		A00000000000000000011007 /* PMTextNormalizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMTextNormalizer.m; sourceTree = "<group>"; };
+		A00000000000000000011008 /* PMContextTagParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMContextTagParser.h; sourceTree = "<group>"; };
+		A00000000000000000011009 /* PMContextTagParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMContextTagParser.m; sourceTree = "<group>"; };
+		A00000000000000000011010 /* PMSpeechRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMSpeechRecognizer.h; sourceTree = "<group>"; };
+		A00000000000000000011011 /* PMSpeechRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMSpeechRecognizer.m; sourceTree = "<group>"; };
+		A00000000000000000012000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000012001 /* PMKeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMKeyboardViewController.h; sourceTree = "<group>"; };
+		A00000000000000000012002 /* PMKeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMKeyboardViewController.m; sourceTree = "<group>"; };
+		A00000000000000000013000 /* PMTextNormalizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMTextNormalizerTests.m; sourceTree = "<group>"; };
+		A00000000000000000013001 /* PMContextTagParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMContextTagParserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000001002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000002002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000003002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000004 /* PyMonologue */,
+				A00000000000000000000005 /* PyMonologueKeyboard */,
+				A00000000000000000000006 /* PyMonologueTests */,
+				A00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000010000 /* PyMonologue.app */,
+				A00000000000000000010001 /* PyMonologueKeyboard.appex */,
+				A00000000000000000010002 /* PyMonologueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* PyMonologue */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000011001 /* main.m */,
+				A00000000000000000011002 /* PMAppDelegate.h */,
+				A00000000000000000011003 /* PMAppDelegate.m */,
+				A00000000000000000011004 /* PMHostViewController.h */,
+				A00000000000000000011005 /* PMHostViewController.m */,
+				A00000000000000000011006 /* PMTextNormalizer.h */,
+				A00000000000000000011007 /* PMTextNormalizer.m */,
+				A00000000000000000011008 /* PMContextTagParser.h */,
+				A00000000000000000011009 /* PMContextTagParser.m */,
+				A00000000000000000011010 /* PMSpeechRecognizer.h */,
+				A00000000000000000011011 /* PMSpeechRecognizer.m */,
+				A00000000000000000011000 /* Info.plist */,
+			);
+			path = PyMonologue;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* PyMonologueKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000012001 /* PMKeyboardViewController.h */,
+				A00000000000000000012002 /* PMKeyboardViewController.m */,
+				A00000000000000000012000 /* Info.plist */,
+			);
+			path = PyMonologueKeyboard;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000006 /* PyMonologueTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000013000 /* PMTextNormalizerTests.m */,
+				A00000000000000000013001 /* PMContextTagParserTests.m */,
+			);
+			path = PyMonologueTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000001000 /* PyMonologue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000090001 /* Build configuration list for PBXNativeTarget "PyMonologue" */;
+			buildPhases = (
+				A00000000000000000001001 /* Sources */,
+				A00000000000000000001002 /* Frameworks */,
+				A00000000000000000001003 /* Resources */,
+				A00000000000000000001004 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000002011 /* PBXTargetDependency */,
+			);
+			name = PyMonologue;
+			productName = PyMonologue;
+			productReference = A00000000000000000010000 /* PyMonologue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000002000 /* PyMonologueKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000090002 /* Build configuration list for PBXNativeTarget "PyMonologueKeyboard" */;
+			buildPhases = (
+				A00000000000000000002001 /* Sources */,
+				A00000000000000000002002 /* Frameworks */,
+				A00000000000000000002003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyMonologueKeyboard;
+			productName = PyMonologueKeyboard;
+			productReference = A00000000000000000010001 /* PyMonologueKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A00000000000000000003000 /* PyMonologueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000090003 /* Build configuration list for PBXNativeTarget "PyMonologueTests" */;
+			buildPhases = (
+				A00000000000000000003001 /* Sources */,
+				A00000000000000000003002 /* Frameworks */,
+				A00000000000000000003003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000003011 /* PBXTargetDependency */,
+			);
+			name = PyMonologueTests;
+			productName = PyMonologueTests;
+			productReference = A00000000000000000010002 /* PyMonologueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A00000000000000000001000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A00000000000000000002000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A00000000000000000003000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000090000 /* Build configuration list for PBXProject "PyMonologue" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000002;
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000001000 /* PyMonologue */,
+				A00000000000000000002000 /* PyMonologueKeyboard */,
+				A00000000000000000003000 /* PyMonologueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000001003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000002003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000003003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000001001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000021001 /* main.m in Sources */,
+				A00000000000000000021002 /* PMAppDelegate.m in Sources */,
+				A00000000000000000021003 /* PMHostViewController.m in Sources */,
+				A00000000000000000021004 /* PMTextNormalizer.m in Sources */,
+				A00000000000000000021005 /* PMContextTagParser.m in Sources */,
+				A00000000000000000021006 /* PMSpeechRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000002001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000022001 /* PMKeyboardViewController.m in Sources */,
+				A00000000000000000022002 /* PMTextNormalizer.m in Sources */,
+				A00000000000000000022003 /* PMContextTagParser.m in Sources */,
+				A00000000000000000022004 /* PMSpeechRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000003001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000023001 /* PMTextNormalizerTests.m in Sources */,
+				A00000000000000000023002 /* PMContextTagParserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A00000000000000000002011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000002000 /* PyMonologueKeyboard */;
+			targetProxy = A00000000000000000002010 /* PBXContainerItemProxy */;
+		};
+		A00000000000000000003011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000001000 /* PyMonologue */;
+			targetProxy = A00000000000000000003010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000091000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = auto;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000091001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = auto;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A00000000000000000092000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PyMonologue";
+				INFOPLIST_FILE = PyMonologue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastreus.pymonologue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000092001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PyMonologue";
+				INFOPLIST_FILE = PyMonologue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastreus.pymonologue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A00000000000000000093000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PyMonologue";
+				INFOPLIST_FILE = PyMonologueKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastreus.pymonologue.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000093001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PyMonologue";
+				INFOPLIST_FILE = PyMonologueKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastreus.pymonologue.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A00000000000000000094000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PyMonologue";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastreus.pymonologue.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PyMonologue.app/PyMonologue";
+			};
+			name = Debug;
+		};
+		A00000000000000000094001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/PyMonologue";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rastreus.pymonologue.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PyMonologue.app/PyMonologue";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000090000 /* Build configuration list for PBXProject "PyMonologue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000091000 /* Debug */,
+				A00000000000000000091001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000090001 /* Build configuration list for PBXNativeTarget "PyMonologue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000092000 /* Debug */,
+				A00000000000000000092001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000090002 /* Build configuration list for PBXNativeTarget "PyMonologueKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000093000 /* Debug */,
+				A00000000000000000093001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000090003 /* Build configuration list for PBXNativeTarget "PyMonologueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000094000 /* Debug */,
+				A00000000000000000094001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}
