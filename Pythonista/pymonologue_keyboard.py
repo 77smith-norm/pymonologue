@@ -8,6 +8,8 @@ but the voice pipeline stops at a placeholder transcript until Russell verifies:
 - keyboard.insert_text() in target apps
 """
 
+import sound
+import tempfile
 from pathlib import Path
 import sys
 
@@ -133,9 +135,16 @@ def _on_voice_button_tap(view):
         _stop_and_transcribe()
 
 
+_current_recorder = None
+
+
 def _start_recording():
-    global _is_recording
+    global _is_recording, _current_recorder
     _is_recording = True
+    # IMPORTANT: use tempfile.gettempdir() — /tmp is NOT writable in keyboard sandbox
+    audio_path = tempfile.gettempdir() + '/pymonologue_rec.m4a'
+    _current_recorder = sound.Recorder(audio_path)
+    _current_recorder.record()
     if _keyboard_view is not None:
         _keyboard_view.voice_button.set_recording(True)
 
@@ -146,7 +155,14 @@ def _stop_and_transcribe():
     if _keyboard_view is not None:
         _keyboard_view.voice_button.set_recording(False)
 
-    raw_text = VOICE_PLACEHOLDER
+    # IMPORTANT: use tempfile.gettempdir() — /tmp is NOT writable in keyboard sandbox
+    audio_path = tempfile.gettempdir() + '/pymonologue_rec.m4a'
+    recognizer = speech_recognizer.SpeechRecognizer()
+
+    raw_text = recognizer.transcribe(audio_path)
+    if not raw_text:
+        raw_text = '(no speech detected)'
+
     cleaned = text_normalizer.normalize(raw_text)
     auto_dictionary.process_transcription(cleaned)
     final_text = context_tags.prepend_tags(cleaned, _tag_context.get_current_tags())
